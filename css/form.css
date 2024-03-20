@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    margin-bottom: 30px; /* Adiciona margem inferior ao título */
+}
+
+#form-container {
+    width: 80%; /* Expande o formulário para usar 80% da largura da tela */
+    max-width: 400px; /* Define uma largura máxima para o formulário */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 100%; /* Expande os botões para usar toda a largura do formulário */
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0; /* Adiciona margem vertical entre os botões */
+}
+
+#botao-nao {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#botao-sim {
+    background-color: #d3d3d3;
+    color: black;
+}
+
+video {
+    width: 80%; /* Expande o vídeo para ocupar toda a largura do formulário */
+    border-radius: 20px; /* Adiciona borda arredondada ao vídeo */
+    border: 5px solid #4CAF50;
+    margin-bottom: 10px; /* Adiciona margem inferior para separar os botões */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 80px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 10px;
+}
+
+.header h1 {
+    margin: 0;
+    white-space: nowrap;
+}
+
+.header h1 span {
+    display: block;
+}

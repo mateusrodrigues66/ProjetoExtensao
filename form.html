@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" href="/midia/icon.png" type="image/x-icon">
+    <title>Modelagem Matemática Inclusiva</title>
+
+</head>
+<body>
+  <div class="header">
+  <img src="/midia/logo png.png" alt="Logo Modelagem Matematica Inclusiva">  
+  <h1>Modelagem Matemática Inclusiva</h1>
+</div>
+<div id="form-container">
+    <h2>Você é um usuário ouvinte?</h2>
+    <video controls autoplay loop>
+        <source src="/midia/video-boas-vindas.mp4" type="video/mp4">
+        Seu navegador não suporta o elemento <code>video</code>.
+    </video>
+    <button id="botao-nao">Não, Acessar com Libras</button>
+    <button id="botao-sim">Sim, acessar sem Libras</button>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      
+        document.getElementById("botao-nao").addEventListener("click", function() {
+            window.location.href = "principal.html";
+        });
+      </script>
+</body>
+</html>

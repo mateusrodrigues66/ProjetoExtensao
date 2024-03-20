@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelagem Matemática Inclusiva</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="icon" href="/midia/icon azul.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-title-container">
+            <img src="/midia/logo png azul.png" alt="Logo da Modelagem Matemática Inclusiva" class="logo">
+            <div class="title-container">
+                <h1>MMI</h1>
+                <p class="location">IRATI - PR</p>
+            </div>
+        </div>
+    
+       <!-- 
+        <div class="pesquisa">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="button">Buscar</button>
+        </div>
+        -->
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="active">Inicio</a></li>
+                <li><a href="#aspectos-legais">Aspectos Legais</a></li>
+                <li>
+                    <a href="#orientacoes" class="orientacoes">Orientações</a>
+                    <ul class="sub-menu">
+                        <li><a href="#orientacoes-professores">Orientações para Professores</a></li>
+                        <li><a href="#orientacoes-ouvintes">Orientações para Estudantes Ouvintes</a></li>
+                        <li><a href="#orientacoes-surdos">Orientações para Estudantes Surdos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#relatos-experiencias">Relatos de Experiências</a></li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('nav ul li a:not(.sub-menu a)');
+    const orientacoesParent = document.querySelector('.orientacoes-parent');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            document.querySelectorAll('nav ul li').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            if (this.parentElement.classList.contains('sub-menu')) {
+                orientacoesParent.classList.add('active');
+            } else {
+                this.parentElement.classList.add('active');
+            }
+        });
+    });
+});
+</script>
+<div class="container">
+    <header>
+        <img src="/midia/site_parasuros.webp" alt="Imagem Ilustrativa" class="imgilustrativa">
+        <h1 class="h1_modelagem">Modelagem Matemática Inclusiva: Elaboração de um produto educacional para estudantes surdos</h1>
+    </header>
+
+    <section class="resumo">
+        <h2>Resumo</h2>
+        <p>A inclusão no ambiente escolar vem sendo discutida e fomentada fortemente nos últimos anos. Entretanto, muitos ainda são os desafios para promover um ensino de qualidade para estudantes com necessidades específicas, por exemplo, estudantes surdos. ...</p>
+    </section>
+
+    <section class="objetivos">
+        <h2>Objetivos</h2>
+        <p>Desenvolver um produto educacional, um site, para melhorar o ensino de matemática utilizando a Modelagem Matemática para estudantes surdos.</p>
+    </section>
+
+    <section class="publico-alvo">
+        <h2>Público-Alvo</h2>
+        <p>Descrição do público, volume populacional e características socioeconômicas e educacionais.</p>
+    </section>
+    <section class="noticias">
+        <h2>Últimas Notícias</h2>
+        <ul>
+            <li><strong>24 Março 2024:</strong> Lançamento do módulo interativo de matemática.</li>
+            <li><strong>15 Abril 2024:</strong> Workshop virtual para professores sobre Modelagem Matemática Inclusiva.</li>
+        </ul>
+    </section>
+    <div class="acessibilidade">
+        <button id="aumentar-fonte">A+ Fonte</button>
+        <button id="diminuir-fonte">A- Fonte</button>
+        <button id="contraste">Alto Contraste</button>
+    </div>
+    <section class="relatos">
+        <h2>Relatos de Experiências</h2>
+        <p>Explorando como a Modelagem Matemática contribuiu para o ensino inclusivo.</p>
+    </section>
+    
+
+</div>
+<script>
+
+document.getElementById('aumentar-fonte').addEventListener('click', function() {
+    document.body.style.fontSize = '24px';
+});
+
+document.getElementById('diminuir-fonte').addEventListener('click', function() {
+    document.body.style.fontSize = '14px';
+});
+
+document.getElementById('contraste').addEventListener('click', function() {
+    document.body.classList.toggle('alto-contraste');
+});
+
+</script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        });
+    </script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+</body>
+
+
+
+<footer>
+    <p>© 2024 Modelagem Matemática Inclusiva. Todos os direitos reservados.</p>
+</footer>
+</html>

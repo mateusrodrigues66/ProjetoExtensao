@@ -1,0 +1,249 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.resumo, .objetivos, .publico-alvo, .noticias, .relatos {
+    background-color: #eef;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.container header {
+    display: flex;
+    align-items: center;
+    justify-content: start; 
+    padding: 20px;
+}
+h2 {
+    color: #4a4a4a;
+    border-bottom: 2px solid #225ee7;
+    padding-bottom: 5px;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #4a4a4a;
+    border-top: 1px solid #f0f0f0;
+}
+
+.logo-title-container {
+    display: flex;
+    align-items: center;
+}
+.imgilustrativa {
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
+    height: 350px; 
+    width: auto; 
+    border-radius: 5px;     
+}
+.h1_modelagem {
+    margin-left: 80px; 
+    color: #4a4a4a; 
+    font-size: 40px; 
+    width: 85%;
+    text-align: left;
+}
+.logo {
+    height: 60px; 
+    margin-right: 10px; 
+}
+
+.title-container {
+    color:#225ee7;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    line-height: 0; 
+}
+
+.title {
+    margin: 0; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.location {
+    color:#4a4a4a;
+    margin: 0px;
+    font-size: 10px; }
+
+.noticias, .relatos {
+    background-color: #eef;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.noticias ul, .relatos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.noticias li, .relatos li {
+    margin-bottom: 10px;
+}
+
+.acessibilidade{
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 2000;
+}
+
+.acessibilidade button {
+    font-size: 18px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #225ee7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.acessibilidade button:hover {
+    background-color: #183e98;
+}
+
+.alto-contraste {
+    background-color: #333;
+    color: white;
+    .h1_modelagem{
+            color: white;
+    }
+    h2{
+        color :#ffffff;
+        border-bottom: 2px solid #ffffff;
+        padding-bottom: 5px;    
+    }
+    .resumo, .objetivos, .publico-alvo, .noticias, .relatos {
+        background-color: #4a4a4a;
+    }
+    .container{
+        background-color: #333;
+    }
+    header{
+        background-color: #333;
+        p{
+            color:white;
+        }
+    }
+
+}
+
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #4a4a4a;
+    padding: 10px 8px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+    position: relative;
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza os links */
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px; 
+}
+
+nav ul li a {
+    flex-grow: 1; 
+    text-align: center;
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px; 
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+    display: inline-block; 
+}
+
+nav ul li a.active {
+    background-color: #225ee7;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #225ee7;
+    color: #ffffff;
+}
+
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+}
+
+nav ul li:hover .sub-menu {
+    display: block; }
+
+
+@media only screen and (max-width: 768px) {
+    .header {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0; 
+    }
+
+    nav ul li a {
+        width: 100%; 
+        text-align: center; 
+    }
+
+    .sub-menu {
+        position: static; 
+    }
+}
+
